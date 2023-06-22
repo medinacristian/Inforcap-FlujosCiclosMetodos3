@@ -15,24 +15,26 @@ def adivina_el_numero(n)
 
   while attempts < max_attempts
     attempts += 1
-    attempts_restantes = max_attempts - attempts
+    remaining_attempts = max_attempts - attempts
 
     print "Intento #{attempts}: "
     chosen_number = gets.chomp.to_i
 
-    if chosen_number == secret_number
-      puts "¡Felicidades! ¡Adivinaste el número #{secret_number} en #{attempts} intentos!"
-      guessed = true
-      break
-    elsif chosen_number < secret_number
-      puts "El número es mayor. Te quedan #{attempts_restantes} intentos. Intenta nuevamente."
-    else
-      puts "El número es menor. Te quedan #{attempts_restantes} intentos. Intenta nuevamente."
+    if remaining_attempts > 0
+      if chosen_number == secret_number
+        puts "¡Felicidades! ¡Adivinaste el número #{secret_number} en #{attempts} intentos!"
+        guessed = true
+        break
+      elsif chosen_number < secret_number
+        puts "El número es mayor. Te quedan #{remaining_attempts} intentos. Intenta nuevamente."
+      else
+        puts "El número es menor. Te quedan #{remaining_attempts} intentos. Intenta nuevamente."
+      end
     end
   end
 
   unless guessed
-    puts "¡Lo siento! No lograste adivinar el número. El número secreto era #{secret_number}. ¡Inténtalo nuevamente!"
+    puts "¡Lo siento! No lograste adivinar el número. El número secreto era #{secret_number}."
   end
 end
 
