@@ -1,3 +1,9 @@
+# Autor: Cristian Medina
+# Fecha: 21/06/2023
+# Github: https://github.com/medinacristian
+# Email: medinacristian@gmail.com
+# Comentario: Calcula el índice de masa corporal (IMC) de una persona.
+
 def formula_imc(valor1, valor2)
   imc = valor1 / valor2**2
 end

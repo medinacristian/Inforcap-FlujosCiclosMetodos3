@@ -1,3 +1,9 @@
+# Autor: Cristian Medina
+# Fecha: 21/06/2023
+# Github: https://github.com/medinacristian
+# Email: medinacristian@gmail.com
+# Comentario: Este programa es un juego de adivinar el número secreto.
+
 def adivina_el_numero(n)
   secret_number = rand(1..n)
 

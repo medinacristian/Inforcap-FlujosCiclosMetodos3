@@ -1,10 +1,8 @@
-# Se solicita un programa que mediante el uso de métodos permita calcular el nuevo salario de un colaborador/a en función de un porcentaje mínimo de aumento establecido.
-
-# fórmula:  salario + (salario * (incremento / 1000))
-
 # Autor: Cristian Medina
 # Fecha: 21/06/2023
 # Github: https://github.com/medinacristian
+# Email: medinacristian@gmail.com
+# Comentario: Calcula el nuevo salario de un colaborador/a.
 
 def calcular_nuevo_salario(salario, incremento)
   nuevo_salario = salario + (salario * (incremento / 100.0))
