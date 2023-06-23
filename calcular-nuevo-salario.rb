@@ -5,7 +5,7 @@
 # Comentario: Calcula el nuevo salario de un colaborador/a.
 
 def calcular_nuevo_salario(salario, incremento)
-  nuevo_salario = salario + (salario * (incremento / 100.0))
+  nuevo_salario = salario + (salario * (incremento / 100.0)) #Calcular nuevo salario
   nuevo_salario.round(2) # Redondear el resultado a 2 decimales
 end
 
@@ -19,4 +19,5 @@ porcentaje_incremento = gets.chomp.to_f
 # Calcular y mostrar el nuevo salario
 nuevo_salario = calcular_nuevo_salario(salario_actual, porcentaje_incremento)
 
+# Mostrar el resultado
 puts "El nuevo salario del colaborador/a es: #{nuevo_salario}"
